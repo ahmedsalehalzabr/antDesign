@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, NonNullableFormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -23,6 +24,7 @@ export class LoginComponent implements OnInit{
   submitForm(): void {
     if (this.validateForm.valid) {
       console.log('submit', this.validateForm.value);
+      this.router.navigate(['/welcome'])
     } else {
       Object.values(this.validateForm.controls).forEach(control => {
         if (control.invalid) {
@@ -33,5 +35,5 @@ export class LoginComponent implements OnInit{
     }
   }
 
-  constructor(private fb: NonNullableFormBuilder) {}
+  constructor(private fb: NonNullableFormBuilder,private router:Router) {}
 }
