@@ -96,7 +96,7 @@ registerLocaleData(hi);
   declarations: [
     AppComponent,
     LoginComponent,
-    WelcomeComponent
+  
   ],
   imports: [
     BrowserModule,
