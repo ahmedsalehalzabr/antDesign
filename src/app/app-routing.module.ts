@@ -9,7 +9,7 @@ const routes: Routes = [
   { path:'login', component:LoginComponent},
   { path:'welcome',component:WelcomeComponent},
   { path: 'category', component:CategoryComponent}
-
+// { path: 'login', loadChildren: () => import('./login/login/login.module').then((m) => m.LoginModule) },
   // { path: '', pathMatch: 'full', redirectTo: '/welcome' },
   // { path: 'welcome', loadChildren: () => import('./pages/welcome/welcome.module').then(m => m.WelcomeModule) }
 ];

@@ -99,6 +99,7 @@ registerLocaleData(hi);
   
   ],
   imports: [
+    
     BrowserModule,
     AppRoutingModule,
     IconsProviderModule,
