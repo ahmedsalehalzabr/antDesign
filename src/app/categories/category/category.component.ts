@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './category.component.css'
 })
 export class CategoryComponent {
-
+  log(): void {
+    console.log('click dropdown button');
+  }
 }
